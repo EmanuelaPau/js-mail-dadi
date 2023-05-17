@@ -12,6 +12,10 @@ body {
     height: 40px;
 }
 
+.my_dice {
+    width: 80px;
+}
+
 .card-container {
     padding: 10px 20px;
     background-color: white;
