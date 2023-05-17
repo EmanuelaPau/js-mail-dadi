@@ -6,14 +6,23 @@ console.log(firstDice);
 let secondDice = Math.floor((Math.random() * 6) + 1);
 console.log(secondDice);
 
+let diceWinner = document.getElementById("dice-winner")
+
 // Determine the winner
 if (firstDice > secondDice) {
     console.log("Player 1 wins!")
+    diceWinner.innerText = " Player 1 wins!"
 } else if (firstDice < secondDice) {
     console.log("Player 2 wins!")
+    diceWinner.innerText = " Player 2 wins!"
 } else {
     console.log("Draw!")
+    diceWinner.innerText = " It's a Draw"
+
 }
+
+
+
 
 // Add email List 
 let emailList = ['pippo@gmail.com', 'paperino@gmail.com', 'topolina@libero.it', 'olivia@gmail.com', 'orazio@gmail.com', 'clarabella@gmail.com', 'tip@libero.it', 'tap@libero.it', 'etabeta@gmail.com', 'topolino@gmail.com', 'pluto@gmail.com', 'pietro@gmail.com', 'amelia@gmail.com', 'archimede@gmail.com', 'battista@libero.com', 'paperina@gmail.com', 'brigitta@gmail.com', 'ziopaperone@gmail.com', 'ciccio@gimail.com', 'qui@libero.com', 'quo@gmail.com', 'qua@gmail.com'];

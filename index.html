@@ -23,10 +23,29 @@
         <main>
             <div class="app-container">
                 <!-- Dice game -->
-                <div></div>
+                <div id="dice-game" class="card-container mb-5">
+                    <h1 class="fw-bolder text-center mb-5 mt-3">Dice Game</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div id="player-1" class="col-6 text-center pt-2 mb-5 border-end"> 
+                                <h3 class="mb-3 fw-bolder">Player 1</h3>
+                                <p>Your dice rolled:</p>
+                            </div>
+                            <div id="player-2" class="col-6 text-center pt-2 mb-5">
+                                <h3 class="mb-3 fw-bolder">Player 2</h3>
+                                <p>Your dice rolled:</p>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button id="p-two-button" type="button" class="btn btn-primary mb-3">Roll</button>
+                                <p id="dice-winner">Who will win?</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
     
                 <!-- Mail checker -->
-                <div id="mail-checker" class="mail-checker">
+                <div id="mail-checker" class="card-container">
                     <h1 class="fw-bolder">Mail Checker</h1>
                     <div class="mb-3">
                         <label for="email-input">Email address</label>
