@@ -38,5 +38,10 @@ if (firstDice > secondDice) {
 // continuo fino alla fine degli elementi dell'array
 // 4. stabilisco se la mia email corrisponde o no
 
+// Add email List 
 let emailList = ['pippo@gmail.com', 'paperino@gmail.com', 'topolina@libero.it', 'olivia@gmail.com', 'orazio@gmail.com', 'clarabella@gmail.com', 'tip@libero.it', 'tap@libero.it', 'etabeta@gmail.com', 'topolino@gmail.com', 'pluto@gmail.com', 'pietro@gmail.com', 'amelia@gmail.com', 'archimede@gmail.com', 'battista@libero.com', 'paperina@gmail.com', 'brigitta@gmail.com', 'ziopaperone@gmail.com', 'ciccio@gimail.com', 'qui@libero.com', 'quo@gmail.com', 'qua@gmail.com'];
 console.log(emailList);
+
+// Add prompt
+let yourEmail = prompt('Inserisci la tua email. Es. ciao@gmail.com');
+console.log(yourEmail);
