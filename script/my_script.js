@@ -26,23 +26,26 @@ let emailQuantity = emailList.length;
 // Add event listener
 let emailButton = document.getElementById("email-button");
 let yourEmail;
-
 // Add button click behavior 
 emailButton.addEventListener('click', function () {
     // Add input value 
     yourEmail = document.getElementById("email-input");
     yourEmail = yourEmail.value;
     console.log(yourEmail);
+    let verify = 0;
+
 
     // Add for cycle 
     for (let i = 0; i < emailQuantity; i++) {
         // Add access verification
         if (yourEmail === emailList[i]) {
             console.log("You got access!");
-
-        } else {
-            console.log("Sorry, you can't access");
+            verify = 1;
         }
+    }
+
+    if (verify === 0) {
+        console.log("Sorry, you can't access");
     }
 })
 
