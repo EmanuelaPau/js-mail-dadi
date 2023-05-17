@@ -42,6 +42,15 @@ if (firstDice > secondDice) {
 let emailList = ['pippo@gmail.com', 'paperino@gmail.com', 'topolina@libero.it', 'olivia@gmail.com', 'orazio@gmail.com', 'clarabella@gmail.com', 'tip@libero.it', 'tap@libero.it', 'etabeta@gmail.com', 'topolino@gmail.com', 'pluto@gmail.com', 'pietro@gmail.com', 'amelia@gmail.com', 'archimede@gmail.com', 'battista@libero.com', 'paperina@gmail.com', 'brigitta@gmail.com', 'ziopaperone@gmail.com', 'ciccio@gimail.com', 'qui@libero.com', 'quo@gmail.com', 'qua@gmail.com'];
 console.log(emailList);
 
+// Know the number of emails in the list 
+let emailQuantity = emailList.length;
+console.log(emailQuantity);
+
 // Add prompt
 let yourEmail = prompt('Inserisci la tua email. Es. ciao@gmail.com');
 console.log(yourEmail);
+
+// Add for cycle 
+for (let i = 0; i <= emailQuantity; i++) {
+    console.log(i)
+} 
