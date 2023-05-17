@@ -51,6 +51,7 @@ let yourEmail = prompt('Inserisci la tua email. Es. ciao@gmail.com');
 console.log(yourEmail);
 
 // Add for cycle 
-for (let i = 0; i <= emailQuantity; i++) {
-    console.log(i)
+for (let i = 0; i < emailQuantity; i++) {
+    // console.log(i)
+    console.log(emailList[i]);
 } 
