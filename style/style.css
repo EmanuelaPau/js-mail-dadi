@@ -1,4 +1,20 @@
-main {
-    max-width: 1000px;
+body {
+    background-color: azure;
+}
+
+.app-container {
     margin: 0 auto;
+    margin-top: 80px;
+    max-width: 700px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.my_txt-green {
+    color: green;
+}
+
+.my_txt-red {
+    color: red;
 }

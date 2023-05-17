@@ -26,6 +26,10 @@ let emailQuantity = emailList.length;
 // Add event listener
 let emailButton = document.getElementById("email-button");
 let yourEmail;
+
+// Add Email verify text elements 
+let emailVerifyTxt = document.getElementById("mail-checker")
+let emailVerifyElement = document.createElement("p");
 // Add button click behavior 
 emailButton.addEventListener('click', function () {
     // Add input value 
@@ -34,18 +38,25 @@ emailButton.addEventListener('click', function () {
     console.log(yourEmail);
     let verify = 0;
 
+    emailVerifyTxt.append(emailVerifyElement);
 
     // Add for cycle 
     for (let i = 0; i < emailQuantity; i++) {
         // Add access verification
         if (yourEmail === emailList[i]) {
             console.log("You got access!");
+            emailVerifyElement.innerHTML = 'You got access';
+            emailVerifyElement.classList.add("fw-bold")
+            emailVerifyElement.classList.add("my_txt-green")
             verify = 1;
         }
     }
 
     if (verify === 0) {
         console.log("Sorry, you can't access");
+        emailVerifyElement.innerHTML = "Sorry, you can't access";
+        emailVerifyElement.classList.add("fw-bold")
+        emailVerifyElement.classList.add("my_txt-red")
     }
 })
 
