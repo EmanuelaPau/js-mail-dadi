@@ -1,27 +1,28 @@
-// Add first dice
-let firstDice = Math.floor((Math.random() * 6) + 1);
-console.log(firstDice);
-
-// Add second dice
-let secondDice = Math.floor((Math.random() * 6) + 1);
-console.log(secondDice);
 
 let diceWinner = document.getElementById("dice-winner")
 
-// Determine the winner
-if (firstDice > secondDice) {
-    console.log("Player 1 wins!")
-    diceWinner.innerText = " Player 1 wins!"
-} else if (firstDice < secondDice) {
-    console.log("Player 2 wins!")
-    diceWinner.innerText = " Player 2 wins!"
-} else {
-    console.log("Draw!")
-    diceWinner.innerText = " It's a Draw"
+let rollDice = document.getElementById('dice-button')
 
+rollDice.addEventListener('click', function () {
+    // Add first dice
+    let firstDice = Math.floor((Math.random() * 6) + 1);
+
+    // Add second dice
+    let secondDice = Math.floor((Math.random() * 6) + 1);
+
+    // Determine the winner
+    if (firstDice > secondDice) {
+        console.log("Player 1 wins!")
+        diceWinner.innerText = " Player 1 wins!"
+    } else if (firstDice < secondDice) {
+        console.log("Player 2 wins!")
+        diceWinner.innerText = " Player 2 wins!"
+    } else {
+        console.log("Draw!")
+        diceWinner.innerText = " It's a Draw."
+    }
 }
-
-
+)
 
 
 // Add email List 
