@@ -18,6 +18,11 @@
 // 1.creo una variabile il cui valore e' un numero random da 1 a 6 
 // 2. creo una seconda variabile il cui valore e' un numero random da 1 a 6 
 // 3. stabilisco il vincitore:
-    // se il primo numero e' > del secondo vince il primo giocatore
-    // se il primo numero e' < del secondo vince il secondo giocatore
-    // se i numeri sono lo stesso > il risultato e' pari
+// se il primo numero e' > del secondo vince il primo giocatore
+// se il primo numero e' < del secondo vince il secondo giocatore
+// se i numeri sono lo stesso > il risultato e' pari
+
+
+// Creo il primo dado
+let firstDice = Math.floor((Math.random() * 6) + 1);
+console.log(firstDice); 
