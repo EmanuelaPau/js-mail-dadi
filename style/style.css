@@ -8,6 +8,10 @@ body {
     max-width: 700px;
 }
 
+.my_dice-title {
+    height: 40px;
+}
+
 .card-container {
     padding: 10px 20px;
     background-color: white;

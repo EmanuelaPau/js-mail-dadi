@@ -6,9 +6,13 @@ let rollDice = document.getElementById('dice-button')
 rollDice.addEventListener('click', function () {
     // Add first dice
     let firstDice = Math.floor((Math.random() * 6) + 1);
+    let playerOneResult = document.getElementById('p-one-result');
+    playerOneResult.innerHTML = firstDice;
 
     // Add second dice
     let secondDice = Math.floor((Math.random() * 6) + 1);
+    let playerTwoResult = document.getElementById('p-two-result');
+    playerTwoResult.innerHTML = secondDice;
 
     // Determine the winner
     if (firstDice > secondDice) {
