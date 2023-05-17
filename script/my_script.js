@@ -23,6 +23,19 @@
 // se i numeri sono lo stesso > il risultato e' pari
 
 
-// Creo il primo dado
+// Add first dice
 let firstDice = Math.floor((Math.random() * 6) + 1);
-console.log(firstDice); 
+console.log(firstDice);
+
+// Add second dice
+let secondDice = Math.floor((Math.random() * 6) + 1);
+console.log(secondDice);
+
+// Determine the winner
+if (firstDice > secondDice) {
+    console.log("Player 1 wins!")
+} else if (firstDice < secondDice) {
+    console.log("Player 2 wins!")
+} else {
+    console.log("Draw!")
+}
