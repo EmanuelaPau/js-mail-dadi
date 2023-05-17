@@ -53,9 +53,9 @@ console.log('your email is: ' + yourEmail);
 // Add for cycle 
 for (let i = 0; i < emailQuantity; i++) {
     // Add access verification
-    if (yourEmail = emailList[i]) {
+    if (yourEmail === emailList[i]) {
         console.log("You got access!");
     } else {
         console.log("Sorry, you can't access");
     }
-} 
+}
