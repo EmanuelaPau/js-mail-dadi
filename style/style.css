@@ -22,6 +22,11 @@ body {
     border-radius: 15px;
 }
 
+.img-container {
+    width: 100px;
+    height: 80px;
+}
+
 .my_txt-green {
     color: green;
 }

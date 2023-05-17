@@ -6,13 +6,13 @@ let rollDice = document.getElementById('dice-button')
 rollDice.addEventListener('click', function () {
     // Add first dice
     let firstDice = Math.floor((Math.random() * 6) + 1);
-    let playerOneResult = document.getElementById('p-one-result');
-    playerOneResult.innerHTML = firstDice;
+    // let playerOneResult = document.getElementById('p-one-result');
+    // playerOneResult.innerHTML = firstDice;
 
     // Add second dice
     let secondDice = Math.floor((Math.random() * 6) + 1);
-    let playerTwoResult = document.getElementById('p-two-result');
-    playerTwoResult.innerHTML = secondDice;
+    // let playerTwoResult = document.getElementById('p-two-result');
+    // playerTwoResult.innerHTML = secondDice;
 
     // Determine the winner
     if (firstDice > secondDice) {
@@ -25,6 +25,139 @@ rollDice.addEventListener('click', function () {
         console.log("Draw!")
         diceWinner.innerText = " It's a Draw."
     }
+
+
+    // first dice 
+    let firstDiceImgFirst = document.getElementById('f-dice-img-one');
+    let secondDiceImgFirst = document.getElementById('f-dice-img-two');
+    let tirdDiceImgFirst = document.getElementById('f-dice-img-three');
+    let fourthDiceImgFirst = document.getElementById('f-dice-img-four');
+    let fifthDiceImgFirst = document.getElementById('f-dice-img-five');
+    let sixthDiceImgFirst = document.getElementById('f-dice-img-six');
+
+    // Add first dice img 
+    if (firstDice === 1) {
+        // Hyde previous dice
+        secondDiceImgFirst.classList.add("d-none")
+        tirdDiceImgFirst.classList.add("d-none")
+        fourthDiceImgFirst.classList.add("d-none")
+        fifthDiceImgFirst.classList.add("d-none")
+        sixthDiceImgFirst.classList.add("d-none")
+        // show new dice 
+        firstDiceImgFirst.classList.remove("d-none")
+    } else if (firstDice === 2) {
+        // Hyde previous dice
+        firstDiceImgFirst.classList.add("d-none")
+        tirdDiceImgFirst.classList.add("d-none")
+        fourthDiceImgFirst.classList.add("d-none")
+        fifthDiceImgFirst.classList.add("d-none")
+        sixthDiceImgFirst.classList.add("d-none")
+        // show new dice 
+        secondDiceImgFirst.classList.remove("d-none")
+    } else if (firstDice === 3) {
+        // Hyde previous dice
+        firstDiceImgFirst.classList.add("d-none")
+        secondDiceImgFirst.classList.add("d-none")
+        fourthDiceImgFirst.classList.add("d-none")
+        fifthDiceImgFirst.classList.add("d-none")
+        sixthDiceImgFirst.classList.add("d-none")
+        // show new dice 
+        tirdDiceImgFirst.classList.remove("d-none")
+    } else if (firstDice === 4) {
+        // Hyde previous dice
+        firstDiceImgFirst.classList.add("d-none")
+        secondDiceImgFirst.classList.add("d-none")
+        tirdDiceImgFirst.classList.add("d-none")
+        fifthDiceImgFirst.classList.add("d-none")
+        sixthDiceImgFirst.classList.add("d-none")
+        // show new dice 
+        fourthDiceImgFirst.classList.remove("d-none")
+    } else if (firstDice === 5) {
+        // Hyde previous dice
+        firstDiceImgFirst.classList.add("d-none")
+        secondDiceImgFirst.classList.add("d-none")
+        tirdDiceImgFirst.classList.add("d-none")
+        fourthDiceImgFirst.classList.add("d-none")
+        sixthDiceImgFirst.classList.add("d-none")
+        // show new dice 
+        fifthDiceImgFirst.classList.remove("d-none")
+    } else if (firstDice === 6) {
+        // Hyde previous dice
+        firstDiceImgFirst.classList.add("d-none")
+        secondDiceImgFirst.classList.add("d-none")
+        tirdDiceImgFirst.classList.add("d-none")
+        fourthDiceImgFirst.classList.add("d-none")
+        fifthDiceImgFirst.classList.add("d-none")
+        // show new dice 
+        sixthDiceImgFirst.classList.remove("d-none")
+    }
+
+    // second dice 
+    let firstDiceImgSecond = document.getElementById('s-dice-img-one');
+    let secondDiceImgSecond = document.getElementById('s-dice-img-two');
+    let tirdDiceImgSecond = document.getElementById('s-dice-img-three');
+    let fourthDiceImgSecond = document.getElementById('s-dice-img-four');
+    let fifthDiceImgSecond = document.getElementById('s-dice-img-five');
+    let sixthDiceImgSecond = document.getElementById('s-dice-img-six');
+
+    // Add second dice img 
+    if (secondDice === 1) {
+        // Hyde previous dice
+        secondDiceImgSecond.classList.add("d-none")
+        tirdDiceImgSecond.classList.add("d-none")
+        fourthDiceImgSecond.classList.add("d-none")
+        fifthDiceImgSecond.classList.add("d-none")
+        sixthDiceImgSecond.classList.add("d-none")
+        // show new dice 
+        firstDiceImgSecond.classList.remove("d-none")
+    } else if (secondDice === 2) {
+        // Hyde previous dice
+        firstDiceImgSecond.classList.add("d-none")
+        tirdDiceImgSecond.classList.add("d-none")
+        fourthDiceImgSecond.classList.add("d-none")
+        fifthDiceImgSecond.classList.add("d-none")
+        sixthDiceImgSecond.classList.add("d-none")
+        // show new dice 
+        secondDiceImgSecond.classList.remove("d-none")
+    } else if (secondDice === 3) {
+        // Hyde previous dice
+        firstDiceImgSecond.classList.add("d-none")
+        secondDiceImgSecond.classList.add("d-none")
+        fourthDiceImgSecond.classList.add("d-none")
+        fifthDiceImgSecond.classList.add("d-none")
+        sixthDiceImgSecond.classList.add("d-none")
+        // show new dice 
+        tirdDiceImgSecond.classList.remove("d-none")
+    } else if (secondDice === 4) {
+        // Hyde previous dice
+        firstDiceImgSecond.classList.add("d-none")
+        secondDiceImgSecond.classList.add("d-none")
+        tirdDiceImgSecond.classList.add("d-none")
+        fifthDiceImgSecond.classList.add("d-none")
+        sixthDiceImgSecond.classList.add("d-none")
+        // show new dice 
+        fourthDiceImgSecond.classList.remove("d-none")
+    } else if (secondDice === 5) {
+        // Hyde previous dice
+        firstDiceImgSecond.classList.add("d-none")
+        secondDiceImgSecond.classList.add("d-none")
+        tirdDiceImgSecond.classList.add("d-none")
+        fourthDiceImgSecond.classList.add("d-none")
+        sixthDiceImgSecond.classList.add("d-none")
+        // show new dice 
+        fifthDiceImgSecond.classList.remove("d-none")
+    } else if (secondDice === 6) {
+        // Hyde previous dice
+        firstDiceImgSecond.classList.add("d-none")
+        secondDiceImgSecond.classList.add("d-none")
+        tirdDiceImgSecond.classList.add("d-none")
+        fourthDiceImgSecond.classList.add("d-none")
+        fifthDiceImgSecond.classList.add("d-none")
+        // show new dice 
+        sixthDiceImgSecond.classList.remove("d-none")
+    }
+
+
 }
 )
 
