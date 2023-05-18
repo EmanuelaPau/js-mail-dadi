@@ -156,11 +156,8 @@ rollDice.addEventListener('click', function () {
         // show new dice 
         sixthDiceImgSecond.classList.remove("d-none")
     }
-
-
 }
 )
-
 
 // Add email List 
 let emailList = ['pippo@gmail.com', 'paperino@gmail.com', 'topolina@libero.it', 'olivia@gmail.com', 'orazio@gmail.com', 'clarabella@gmail.com', 'tip@libero.it', 'tap@libero.it', 'etabeta@gmail.com', 'topolino@gmail.com', 'pluto@gmail.com', 'pietro@gmail.com', 'amelia@gmail.com', 'archimede@gmail.com', 'battista@libero.com', 'paperina@gmail.com', 'brigitta@gmail.com', 'ziopaperone@gmail.com', 'ciccio@gimail.com', 'qui@libero.com', 'quo@gmail.com', 'qua@gmail.com'];
@@ -183,7 +180,7 @@ emailButton.addEventListener('click', function () {
     yourEmail = document.getElementById("email-input");
     yourEmail = yourEmail.value;
     console.log(yourEmail);
-    let verify = 0;
+    let verify = false;
 
     emailVerifyTxt.append(emailVerifyElement);
 
@@ -194,16 +191,19 @@ emailButton.addEventListener('click', function () {
             console.log("You got access!");
             emailVerifyElement.innerHTML = 'You got access';
             emailVerifyElement.classList.add("fw-bold")
+            emailVerifyElement.classList.remove("my_txt-red")
             emailVerifyElement.classList.add("my_txt-green")
-            verify = 1;
+            verify = true;
         }
     }
 
-    if (verify === 0) {
+    if (verify === false) {
         console.log("Sorry, you can't access");
         emailVerifyElement.innerHTML = "Sorry, you can't access";
         emailVerifyElement.classList.add("fw-bold")
+        emailVerifyElement.classList.remove("my_txt-green")
         emailVerifyElement.classList.add("my_txt-red")
     }
 })
 
+// const random = console.log(Math.random());
